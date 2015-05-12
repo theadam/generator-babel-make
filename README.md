@@ -12,7 +12,7 @@ The other useful targets are seperated into categories.
 ##For Building
 - **compile**: Use babel to compile all sources from src -> lib
 - **browser**: Produce browser-ready libraries in the dist folder (including a minified file)
- - if you have dependencies you do not want to include in your bundle, use exposify (or similar) and add a -t flag to the BROWSERIFY_ARGS variable
+ - if you have dependencies you do not want to include in your bundle, use exposify (or similar) and add a -t flag to the STANDALONE_BROWSERIFY_ARGS variable in the Makefile
 
 ##For testing
 - **test**: Use mocha to test
