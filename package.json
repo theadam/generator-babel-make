@@ -1,0 +1,36 @@
+{
+  "name": "generator-babel-make",
+  "version": "0.1.0",
+  "description": "Creates a project setup to do babel compilation, browserify/uglify, mocha testing, istanbul code coverage, using make as a build tool",
+  "files": [
+    "app"
+  ],
+  "author": "Adam Nalisnick <theadam4257@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "yeoman-generator",
+    "babel",
+    "make",
+    "istanbul",
+    "mocha",
+    "Makefile",
+    "es6"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theadam/generator-babel-make"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.25",
+    "chalk": "^1.0.0",
+    "git-config": "0.0.6",
+    "lodash.kebabcase": "^3.0.1",
+    "lodash.trim": "^3.0.1",
+    "yeoman-generator": "^0.19.2",
+    "yosay": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^3.1.1",
+    "eslint": "^0.21.0"
+  }
+}

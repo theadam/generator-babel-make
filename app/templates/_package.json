@@ -1,0 +1,25 @@
+{
+  "name": "<%= name %>",
+  "version": "0.1.0",
+  "description": "<%= description %>",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": <%= tags %>,
+  "author": "<%= author %>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<%= user %>/<%= name %>.git"
+  },
+  "bugs": {
+    "url": "https://github.com/<%= user %>/<%= name %>/issues"
+  },
+  "homepage": "https://github.com/<%= user %>/<%= name %>",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
