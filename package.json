@@ -1,7 +1,7 @@
 {
   "name": "generator-babel-make",
   "version": "0.1.1",
-  "description": "Creates a project setup to do babel compilation, browserify/uglify, mocha testing, istanbul code coverage, using make as a build tool",
+  "description": "Creates a project setup to do babel compilation, browserify/uglify, mocha testing, istanbul code coverage, and use make as a build tool",
   "files": [
     "app"
   ],
