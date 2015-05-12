@@ -6,14 +6,7 @@ BABEL =  $(BIN)/babel --stage 0
 UGLIFY = $(BIN)/uglifyjs
 
 BROWSERIFY = $(BIN)/browserify
-BROWSERIFY_ARGS =
-STANDALONE = $(BROWSERIFY) --standalone <%= name %> $(BROWSERIFY_ARGS)
-
-all: test browser
-
-clean: clean clean-tests clean-coverage clean-browser
-
-.PHONY: all clean
+STANDALONE = $(BROWSERIFY) --standalone <%= name %> $(STANDALONE_BROWSERIFY_ARGS)
 
 #
 # COMPILE
@@ -77,8 +70,10 @@ clean-tests:
 
 coverage:
 	make compile-tests
-	$(ISTANBUL) $(ISTANBUL_ARGS) $(MOCHA) -- $(MOCHA_ARGS) $(COMPILED_TEST_DIRS)
-	make clean-tests
+	$(ISTANBUL) $(ISTANBUL_ARGS) $(MOCHA) -- $(MOCHA_ARGS) $(COMPILED_TEST_DIRS); \
+	status=$$?; \
+	make clean-tests; \
+	exit $$status
 	node scripts/open-coverage
 
 clean-coverage:
